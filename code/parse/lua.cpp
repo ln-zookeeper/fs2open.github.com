@@ -12435,7 +12435,7 @@ ade_lib l_CFile("CFile", NULL, "cf", "CFile FS2 filesystem access");
 
 int l_cf_get_path_id(char* n_path)
 {
-	uint i;
+	int i;
 
 	size_t path_len = strlen(n_path);
 	char *buf = (char*) vm_malloc((strlen(n_path)+1) * sizeof(char));
